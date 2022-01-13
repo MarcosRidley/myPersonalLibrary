@@ -75,7 +75,7 @@ header {
   text-align: center; */
   position: fixed;
   top: 36.65%;
-  left: 36.65%;
+  left: 41%;
   z-index: 1000;
   transform: scale(1.4);
 }
