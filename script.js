@@ -60,7 +60,6 @@ function toggleReadBook() {
   } else {
     newBookRead.textContent = "Not yet read";
   }
-  return isRead;
 }
 
 function appendBook(object) {
@@ -77,8 +76,8 @@ function appendBook(object) {
   newDiv.appendChild(launchYearParagraph);
   const alreadyRead = document.createElement("button");
   alreadyRead.classList.add("btn");
-  this.read == true
-    ? (alreadyRead.textContent = "Read")
+  object.read == true
+    ? (alreadyRead.textContent = "Already read")
     : (alreadyRead.textContent = "Not yet read");
   alreadyRead.addEventListener("click", () => {
     alreadyRead.textContent == "Not yet read"

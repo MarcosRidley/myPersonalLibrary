@@ -1,4 +1,4 @@
-:root {
+html {
   font-family: Trebuchet MS;
 }
 body {
@@ -65,8 +65,9 @@ header {
   width: 300px;
   height: auto;
   padding: 20px;
-  border: 20px solid black;
+  border: 15px double black;
   font-size: 25px;
+  border-radius: 10px;
 }
 #newBookTab {
   gap: 20px;
@@ -83,4 +84,20 @@ header {
 #newBookTab input {
   font-size: 24px;
   z-index: 1000;
+}
+
+.footer {
+  position: fixed;
+  bottom: -10px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  font-size: 20px;
+}
+
+img:hover {
+  transform: scale(1.3);
 }
