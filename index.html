@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ridley's Book Library</title>
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="headerDiv">My online library</div>
+    </header>
+    <main id="library">
+      <div class="card hidden" id="newBookTab">
+        <input
+          type="text"
+          class="title"
+          id="newBookID"
+          placeholder="Book name"
+        />
+        <input type="text" class="author" placeholder="Author" />
+        <input type="number" class="launchYear" placeholder="Launch Year" />
+        <button class="isRead">Read?</button>
+        <button class="btn" id="confirmAddBook">Add book</button>
+      </div>
+      <div class="buttonZone">
+        <button id="addBook" class="btn">Add new book</button>
+      </div>
+      <div class="bookCards" id="cards">
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
