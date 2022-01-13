@@ -32,6 +32,7 @@ function addBookToLibrary(book) {
 function toggleWindow() {
   bookCards.classList.toggle("hidden");
   newBookTab.classList.toggle("hidden");
+  newBookTab.classList.toggle("transition");
   if (newBookButton.textContent == "Add new book") {
     newBookButton.textContent = "Cancel";
   } else {
