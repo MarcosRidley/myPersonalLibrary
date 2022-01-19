@@ -15,16 +15,17 @@ newBookRead.addEventListener("click", toggleReadBook);
 confirmAddBook.addEventListener("click", () => createBookCard()); //pegar bkname bkauthor e launchyear dos inputs + se ta lido ou não e criar novo Book
 newBookButton.addEventListener("click", () => toggleWindow());
 
-function book(title, author, year, read) {
-  this.title = title;
-  this.author = author;
-  this.year = year;
-  this.read = read;
-  this.info = function () {
-    return `This book is ${this.title}, written by ${this.author}, ${this.pages} pages long and ${read}`;
-  };
+class book {
+  constructor(title, author, year, read) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+    this.read = read;
+    this.info = function () {
+      return `This book is ${this.title}, written by ${this.author}, ${this.pages} pages long and ${read}`;
+    };
+  }
 }
-
 function addBookToLibrary(book) {
   myBookLibrary.push(book);
 }
